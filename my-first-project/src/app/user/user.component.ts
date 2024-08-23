@@ -3,6 +3,7 @@ import { Component, Input, input, computed, signal, EventEmitter, Output, output
 import { DUMMY_USERS } from '../dummy-user';
 
 import { type User } from './user.model';
+import { CardComponent } from "../shared/card/card.component";
 
 // type User = {
 //     id: string;
@@ -21,7 +22,7 @@ import { type User } from './user.model';
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [CardComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
